@@ -1,85 +1,56 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I Campi Diomedei</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-body {
-  background: #f5f5f5;
-  color: #222;
-}
+<header>
+  <div class="logo">🏠</div>
+  <div class="menu">☰</div>
+</header>
 
-header {
-  height: 60px;
-  padding: 0 20px;
-  background: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #ddd;
-}
+<main>
+  <section class="content">
+    <div class="image-box">
+      <img src="assets/immagine.jpg" alt="Parco dei Campi Diomedei">
+    </div>
 
-main {
-  padding: 20px;
-}
+    <div class="text-box">
+      <h1>I Campi Diomedei</h1>
+      <h2>Alle origini di Foggia</h2>
 
-.content {
-  display: flex;
-  gap: 20px;
-}
+      <p>
+        Nel cuore di Foggia, tra la Villa Comunale e l’ex Ippodromo,
+        si conserva uno dei più antichi villaggi neolitici d’Italia,
+        risalente a circa <strong>6000 a.C.</strong>
+      </p>
 
-.image-box {
-  flex: 1;
-  height: 400px;
-  overflow: hidden;
-  border-radius: 8px;
-}
+      <p>
+        Il sito testimonia il passaggio dal nomadismo alla vita agricola
+        stanziale nel Tavoliere pugliese, con fossati concentrici,
+        capanne, focolari e spazi domestici.
+      </p>
 
-.image-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+      <p>
+        Tra i ritrovamenti più importanti vi è la sepoltura di
+        <strong>“Siro”</strong>, il più antico abitante conosciuto
+        della Daunia.
+      </p>
+    </div>
+  </section>
 
-.text-box {
-  flex: 1;
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  overflow-y: auto;
-}
+  <section class="tabs">
+    <button class="active">IMG</button>
+    <button>MAPPA</button>
+    <button>MUSEO</button>
+    <button>3D</button>
+  </section>
+</main>
 
-.text-box h1 {
-  margin-bottom: 5px;
-}
-
-.text-box h2 {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 15px;
-}
-
-.text-box p {
-  margin-bottom: 12px;
-  line-height: 1.5;
-}
-
-.tabs {
-  margin-top: 15px;
-  display: flex;
-  gap: 10px;
-}
-
-.tabs button {
-  padding: 10px 16px;
-  border: none;
-  background: #ddd;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.tabs button.active {
-  background: #333;
-  color: #fff;
-}
+<script src="js/app.js"></script>
+</body>
+</html>
